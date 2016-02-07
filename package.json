@@ -27,6 +27,19 @@
             ]
         },
         {  
+            "name":"unitTest_FM",
+            "file_name":"unitTest_FM.cls",
+            "description":"Forcemobile Unit Test Template",
+            "author":"James Ellis",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Forcemobile Unit Test Template",
+                    "default":"myApexTest"
+                }
+            ]
+        }
+        {  
             "name":"Auth Registration Handler",
             "file_name":"AuthRegistrationHandler.cls",
             "description":"Registration Handler to manage logins for Auth. Providers",
