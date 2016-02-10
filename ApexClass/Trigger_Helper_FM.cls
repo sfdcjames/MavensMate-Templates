@@ -1,10 +1,9 @@
 /***********************************
 {{ api_name }}
-
-Author = James Ellis
-
-Purpose
-Holds trigger logic in methods to be called from the single trigger on the object
+Purpose:- Holds trigger logic in methods to be called from the single trigger on the object
+Author:- James Ellis
+Version:- 1.0
+Change log:- 
 
 ************************************/
 
