@@ -60,7 +60,7 @@
                     "description":"Forcemobile Unit Test Template",
                     "default":"myApexTest"
                 },
-
+                }
                     "name":"covered_class",
                     "description":"The class covered by this test",
                     "default":"myClassNeedingCoverage"
