@@ -22,17 +22,17 @@
                 {  
                     "name":"api_name",
                     "description":"Apex Class API Name",
-                    "default":"ObjectNameTrigger_Helper"
+                    "default":"myObjectTrigger_Helper"
                 },
                 {  
                     "name":"object_name",
                     "description":"Apex Object API Name",
-                    "default":"Account"
+                    "default":"myObject__c"
                 },
                 {  
                     "name":"object_variable_name",
                     "description":"Short var for list of Object",
-                    "default":"Accts"
+                    "default":"myObjs"
                 }
             ]
         },
@@ -371,6 +371,24 @@
                     "name":"object_name",
                     "description":"Object API Name",
                     "default":"Account"
+                }
+            ]
+        },
+        {  
+            "name":"Trigger_FM",
+            "file_name":"Trigger_FM.trigger",
+            "description":"Forcemobile Apex Trigger template",
+            "author":"James Ellis",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Apex Trigger API Name",
+                    "default":"myObjectTrigger"
+                },
+                {  
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "default":"myObject__c"
                 }
             ]
         },
