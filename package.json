@@ -21,17 +21,17 @@
             "params":[  
                 {  
                     "name":"api_name",
-                    "description":"Apex Class API Name",
+                    "description":"myObjectTrigger_Helper",
                     "default":"myObjectTrigger_Helper"
                 },
                 {  
                     "name":"object_name",
-                    "description":"Apex Object API Name",
+                    "description":"myObject__c",
                     "default":"myObject__c"
                 },
                 {  
                     "name":"object_variable_name",
-                    "description":"Short var for list of Object",
+                    "description":"myObjs",
                     "default":"myObjs"
                 }
             ]
@@ -57,12 +57,12 @@
             "params":[  
                 {  
                     "name":"api_name",
-                    "description":"Forcemobile Unit Test Template",
+                    "description":"ClassThatNeedsTestingTest",
                     "default":"ClassThatNeedsTestingTest"
                 },
                 {  
                     "name":"covered_class",
-                    "description":"the class this test covers",
+                    "description":"ClassThatNeedsTesting",
                     "default":"ClassThatNeedsTesting"
                 }
             ]
@@ -382,12 +382,12 @@
             "params":[  
                 {  
                     "name":"api_name",
-                    "description":"Apex Trigger API Name",
+                    "description":"myObjectTrigger",
                     "default":"myObjectTrigger"
                 },
                 {  
                     "name":"object_name",
-                    "description":"Object API Name",
+                    "description":"myObject__c",
                     "default":"myObject__c"
                 }
             ]
