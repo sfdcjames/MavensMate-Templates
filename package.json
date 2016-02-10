@@ -14,6 +14,29 @@
             ]
         },
         {  
+            "name":"Trigger_Helper_FM",
+            "file_name":"Trigger_Helper_FM.cls",
+            "description":"Template for a trigger helper class",
+            "author":"James Ellis",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"ObjectNameTrigger_Helper"
+                },
+                {  
+                    "name":"object_name",
+                    "description":"Apex Object API Name",
+                    "default":"Account"
+                },
+                {  
+                    "name":"object_variable_name",
+                    "description":"Short var for list of Object",
+                    "default":"Accts"
+                }
+            ]
+        },
+        {  
             "name":"ApexInterface",
             "file_name":"ApexInterface.cls",
             "description":"The default template for an Apex Interface",
