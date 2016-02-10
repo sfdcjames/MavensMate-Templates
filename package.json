@@ -58,7 +58,12 @@
                 {  
                     "name":"api_name",
                     "description":"Forcemobile Unit Test Template",
-                    "default":"myApexTest"
+                    "default":"ClassThatNeedsTestingTest"
+                },
+                {  
+                    "name":"covered_class",
+                    "description":"the class this test covers",
+                    "default":"ClassThatNeedsTesting"
                 }
             ]
         },
