@@ -10,13 +10,28 @@ Change log:-
 private class {{ api_name }} {
 	
 	@isTest static void methodName() {
-		// Implement test code
 
-Integer noOfTestAcc = 200;
-Integer noOfOppsPerAcc = 1;
-Integer noOfContactsPerAcc = 1;
+		Integer noOfTestAcc = 201;
+		Integer noOfOppsPerAcc = 1;
+		Integer noOfContactsPerAcc = 1;
+		Integer noOfLeadsToTest = 201;
 
-String userProfileName = 'Reward Health Partner';
+		String userProfileName = 'Reward Health Partner';
+
+		/************ CREATE A PARTNER USER *************/
+		Account ac = new Account(name ='User Account'); 
+        insert ac;  
+        Contact con1 = new Contact(LastName ='Test User Contact',AccountId = ac.Id);
+        insert con1;
+        Id p = [SELECT Id FROM Profile WHERE Name = :userProfileName].Id;
+
+		User partnerUser =  new User(alias = 'tstPrt', email='test123@noemail.com',
+                emailencodingkey='UTF-8', lastname='Consultant', languagelocalekey='en_US',
+                localesidkey='en_GB', profileid = p, country='United Kingdom',IsActive =true,
+                ContactId = con1.Id,
+                timezonesidkey='Europe/London', username='tester@noemail.com');
+		insert partnerUser;
+		/************ ********************* *************/
 
 
 
