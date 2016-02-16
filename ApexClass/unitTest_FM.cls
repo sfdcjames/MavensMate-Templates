@@ -19,17 +19,25 @@ private class {{ api_name }} {
 		String userProfileName = 'Reward Health Partner';
 
 		/************ CREATE A PARTNER USER *************/
-		Account ac = new Account(name ='User Account'); 
+		Account ac = new Account(Name ='User Account'); 
         insert ac;  
         Contact con1 = new Contact(LastName ='Test User Contact',AccountId = ac.Id);
         insert con1;
         Id p = [SELECT Id FROM Profile WHERE Name = :userProfileName].Id;
 
-		User partnerUser =  new User(alias = 'tstPrt', email='test123@noemail.com',
-                emailencodingkey='UTF-8', lastname='Consultant', languagelocalekey='en_US',
-                localesidkey='en_GB', profileid = p, country='United Kingdom',IsActive =true,
-                ContactId = con1.Id,
-                timezonesidkey='Europe/London', username='tester@noemail.com');
+		User partnerUser =  new User(	Alias = 'tstPrt',
+										Email='test123@noemail.com',
+                						EmailEncodingKey='UTF-8',
+                						LastName='Consultant',
+                						LanguageLocaleKey='en_US',
+                						LocalesIdKey='en_GB',
+                						ProfileId = p,
+                						Country='United Kingdom',
+                						IsActive =true,
+                						ContactId = con1.Id,
+                						TimezonesIdKey='Europe/London',
+                						Username='tester@noemail.com'
+            						);
 		insert partnerUser;
 		/************ ********************* *************/
 
