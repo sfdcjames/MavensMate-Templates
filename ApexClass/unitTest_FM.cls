@@ -26,6 +26,7 @@ private class {{ api_name }} {
         insert con1;
         Id p = [SELECT Id FROM Profile WHERE Name = :userProfileName].Id;
 
+        /***
 		User partnerUser =  new User(Email='test123@noemail.com',
 			Alias = 'tstPrt',
 			EmailEncodingKey='UTF-8',
@@ -40,6 +41,8 @@ private class {{ api_name }} {
 			Username='tester@noemail.com'
 		);
 		insert partnerUser;
+		***/
+		
 		/************ ********************* *************/
 
 	}
