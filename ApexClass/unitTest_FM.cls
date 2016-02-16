@@ -9,7 +9,8 @@ Change log:-
 @isTest
 private class {{ api_name }} {
 	
-	@isTest static void methodName() {
+	@isTest static void Test() 
+	{
 
 		Integer noOfTestAcc = 201;
 		Integer noOfOppsPerAcc = 1;
@@ -25,30 +26,24 @@ private class {{ api_name }} {
         insert con1;
         Id p = [SELECT Id FROM Profile WHERE Name = :userProfileName].Id;
 
-		User partnerUser =  new User(	Alias = 'tstPrt',
-										Email='test123@noemail.com',
-                						EmailEncodingKey='UTF-8',
-                						LastName='Consultant',
-                						LanguageLocaleKey='en_US',
-                						LocalesIdKey='en_GB',
-                						ProfileId = p,
-                						Country='United Kingdom',
-                						IsActive =true,
-                						ContactId = con1.Id,
-                						TimezonesIdKey='Europe/London',
-                						Username='tester@noemail.com'
-            						);
+		User partnerUser =  new User(Email='test123@noemail.com',
+			Alias = 'tstPrt',
+			EmailEncodingKey='UTF-8',
+			LastName='Consultant',
+			LanguageLocaleKey='en_US',
+			LocalesIdKey='en_GB',
+			ProfileId = p,
+			Country='United Kingdom',
+			IsActive =true,
+			ContactId = con1.Id,
+			TimezonesIdKey='Europe/London',
+			Username='tester@noemail.com'
+		);
 		insert partnerUser;
 		/************ ********************* *************/
 
-
-
-
-
-
-
-
 	}
+
 	
 
 }
