@@ -386,9 +386,9 @@
                     "default":"myObjectTrigger"
                 },
                 {  
-                    "name":"object_API_name",
-                    "description":"myObject__c",
-                    "default":"myObject__c"
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "default":"Account"
                 }
             ]
         },
