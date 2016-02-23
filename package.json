@@ -389,11 +389,6 @@
                     "name":"object_API_name",
                     "description":"myObject__c",
                     "default":"myObject__c"
-                },
-                {  
-                    "name":"object_short_name",
-                    "description":"myObject",
-                    "default":"myObject"
                 }
             ]
         },
