@@ -10,7 +10,7 @@ Change Log:-
 
 ***************************************/
 
-trigger {{ api_name }} on {{ object_name }} (before insert, 
+trigger {{ api_name }} on {{ object_API_name }} (before insert, 
 	before update, before delete, after insert, after update, after delete, after undelete) {
 
 
@@ -18,22 +18,22 @@ trigger {{ api_name }} on {{ object_name }} (before insert,
 
           if (Trigger.isInsert) {
 
-          // {{ object_name }}Trigger_Helper a = 
-          //new {{ object_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ object_short_name }}Trigger_Helper a = 
+          //new {{ object_short_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
           //a.
 
           } 
           if (Trigger.isUpdate) {
 
-          //{{ object_name }}Trigger_Helper b = 
-          //  new {{ object_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          //{{ object_short_name }}Trigger_Helper b = 
+          //  new {{ object_short_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
           //b.
 
           }
           if (Trigger.isDelete) {
           // Call class logic here!
-          // {{ object_name }}Trigger_Helper c = 
-          //  new {{ object_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ object_short_name }}Trigger_Helper c = 
+          //  new {{ object_short_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
           //c.
 
           }
@@ -43,22 +43,22 @@ trigger {{ api_name }} on {{ object_name }} (before insert,
       if (Trigger.IsAfter) {
           if (Trigger.isInsert) {
 
-          // {{ object_name }}Trigger_Helper d = 
-          //   new {{ object_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ object_short_name }}Trigger_Helper d = 
+          //   new {{ object_short_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
           //d.  
 
           } 
           if (Trigger.isUpdate) {
 
-          // {{ object_name }}Trigger_Helper e = 
-          //  new {{ object_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ object_short_name }}Trigger_Helper e = 
+          //  new {{ object_short_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
           //e.
 
           }
           if (Trigger.isDelete) {
 
-          // {{ object_name }}Trigger_Helper f = 
-          //  new {{ object_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ object_short_name }}Trigger_Helper f = 
+          //  new {{ object_short_name }}Trigger_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
           //f.
 
           }
