@@ -387,8 +387,8 @@
                 },
                 {  
                     "name":"object_name",
-                    "description":"myObject__c",
-                    "default":"myObject__c"
+                    "description":"myObject",
+                    "default":"myObject"
                 }
             ]
         },
