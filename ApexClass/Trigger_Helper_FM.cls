@@ -31,5 +31,21 @@ List<{{ object_name }}> tNewList){
 
 //insert methods here
 
+	public void SetFieldDefaults()
+	{
+		for({{ object_name }} {{ object_variable_name}}:{{ object_variable_name}}List)
+		{
+			if(Trigger.isInsert)
+			{
+
+			}
+			if(Trigger.isUpdate)
+			{
+				
+			}
+		}
+
+	}
+
 
 }//end of class
