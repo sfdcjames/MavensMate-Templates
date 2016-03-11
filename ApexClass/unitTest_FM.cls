@@ -16,37 +16,32 @@ private class {{ api_name }} {
 		Integer noOfOppsPerAcc = 1;
 		Integer noOfContactsPerAcc = 1;
 		Integer noOfLeadsToTest = 201;
+		String testUserProfileName = 'System Administrator';
 
-		String userProfileName = 'Reward Health Partner';
-
-		/************ CREATE A PARTNER USER *************/
-		Account ac = new Account(Name ='User Account'); 
-        insert ac;  
-        Contact con1 = new Contact(LastName ='Test User Contact',AccountId = ac.Id);
-        insert con1;
-        Id p = [SELECT Id FROM Profile WHERE Name = :userProfileName].Id;
-
-        /***
-		User partnerUser =  new User(Email='test123@noemail.com',
-			Alias = 'tstPrt',
+		/************ CREATE A Test USER *************/
+        List<Profile> profiles = new List<Profile>([SELECT Id FROM Profile WHERE Name ='System Administrator']);
+        if(profiles!=null)
+        {
+        	Id p = profiles.Id;
+        	User tUser =  new User(Email='test123@noemail.com',
+			Alias = 'test',
 			EmailEncodingKey='UTF-8',
-			LastName='Consultant',
+			LastName='User',
 			LanguageLocaleKey='en_US',
 			LocalesIdKey='en_GB',
 			ProfileId = p,
 			Country='United Kingdom',
 			IsActive =true,
-			ContactId = con1.Id,
 			TimezonesIdKey='Europe/London',
 			Username='tester@noemail.com'
-		);
-		insert partnerUser;
-		***/
-		
+			);
+			insert tUser;
+		}
 		/************ ********************* *************/
 
+		Test.startTest();
+
+		Test.stopTest();
+
 	}
-
-	
-
 }
