@@ -18,7 +18,7 @@ private class {{ api_name }} {
 		Integer noOfLeadsToTest = 201;
 		String testUserProfileName = 'System Administrator';
 
-		/************ CREATE A Test USER *************/
+		/************ CREATE A Test USER *************
         List<Profile> profiles = new List<Profile>([SELECT Id FROM Profile WHERE Name ='System Administrator']);
         if(profiles!=null)
         {
@@ -37,7 +37,7 @@ private class {{ api_name }} {
 			);
 			insert tUser;
 		}
-		/************ ********************* *************/
+		************ ********************* *************/
 
 		Test.startTest();
 
