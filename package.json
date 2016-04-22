@@ -68,6 +68,19 @@
             ]
         },
         {  
+            "name":"InvocableMethod",
+            "file_name":"InvocableMethod.cls",
+            "description":"Forcemobile InvocableMethod Template",
+            "author":"James Ellis",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"file name",
+                    "default":"myPlugInName"
+                }
+            ]
+        },
+        {  
             "name":"Auth Registration Handler",
             "file_name":"AuthRegistrationHandler.cls",
             "description":"Registration Handler to manage logins for Auth. Providers",
