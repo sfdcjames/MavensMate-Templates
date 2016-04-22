@@ -10,16 +10,16 @@ ChangeLog -
 global class  {{ api_name }}
 {
   @InvocableMethod(label='myPlugin' description='what my plugin does')
-  global static List<List<myObject>> {{ api_name }}(List<myDataType> myVar) 
+  global static List<List<sObject>> {{ api_name }}(List<Id> myId) 
   {
-    List<myObject> myObjects = new List<myObject>();
-    List<List<myObject>> myObjectList = new List<List<myObject>>();
-    myObjects = [SELECT Id
-    							FROM myObject 
+    List<sObject> sObjects = new List<sObject>();
+    List<List<sObject>> sObjectList = new List<List<sObject>>();
+    sObjects = [SELECT Id
+    							FROM sObject 
     							WHERE Id IN :myVar];
-    myObjectList.add(myObjects);
+    sObjectList.add(sObjects);
 
    
-    return myObjects;
+    return sObjects;
   }
 }
