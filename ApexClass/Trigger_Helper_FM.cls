@@ -1,11 +1,14 @@
-/***********************************
-{{ api_name }}
-Purpose:- Holds trigger logic in methods to be called from the single trigger on the object
-Author:- James Ellis
-Version:- 1.0
-Change log:- 
+/**
+* @author James Ellis, Forcemobile
+* @date 2016
+*
+* @group 
+* @group-content 
+*
+* @description {{ api_name }} - 
+*
+*/
 
-************************************/
 
 public class {{ api_name }} {
 

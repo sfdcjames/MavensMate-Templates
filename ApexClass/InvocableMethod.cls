@@ -1,12 +1,13 @@
-/****************************************************************************************
-{{ api_name }}
-Purpose - this class is used as a plug-in in process builder/flow builder
-Author - James Ellis
-Version - 1.0
-ChangeLog - 
-
-*****************************************************************************************/
-
+/**
+* @author James Ellis, Forcemobile
+* @date 2016
+*
+* @group 
+* @group-content 
+*
+* @description {{ api_name }} - 
+*
+*/
 global class  {{ api_name }}
 {
   @InvocableMethod(label='myPlugin' description='what my plugin does')

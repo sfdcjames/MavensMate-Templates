@@ -1,3 +1,13 @@
+/**
+* @author James Ellis, Forcemobile
+* @date 2016
+*
+* @group 
+* @group-content 
+*
+* @description {{ api_name }} - 
+*
+*/
 public class {{ api_name }} implements Auth.RegistrationHandler {
     
     public User createUser(Id portalId, Auth.UserData data) {
