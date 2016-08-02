@@ -14,25 +14,25 @@
             ]
         },
         {  
-            "name":"Trigger_Helper_FM",
-            "file_name":"Trigger_Helper_FM.cls",
-            "description":"Template for a trigger helper class",
+            "name":"Trigger_Handler_FM",
+            "file_name":"Trigger_Handler_FM.cls",
+            "description":"Template for a trigger handler class",
             "author":"James Ellis",
             "params":[  
                 {  
                     "name":"api_name",
-                    "description":"myObjectTrigger_Helper",
-                    "default":"myObjectTrigger_Helper"
+                    "description":"myObjectTrigger_Handler",
+                    "default":"myObjectTrigger_Handler"
                 },
                 {  
                     "name":"object_name",
-                    "description":"myObject__c",
-                    "default":"myObject__c"
+                    "description":"enter object API name",
+                    "default":"enter object API name"
                 },
                 {  
                     "name":"object_variable_name",
-                    "description":"myObjs",
-                    "default":"myObjs"
+                    "description":"enter collection variable name",
+                    "default":"enter collection variable name"
                 }
             ]
         },

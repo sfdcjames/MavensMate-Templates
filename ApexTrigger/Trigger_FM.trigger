@@ -1,15 +1,14 @@
-/**************************************
-One trigger to rule them ALL
-Purpose
-This trigger seperates trigger logic from the trigger.
-Call the classes and their methods from the relevant if statements below
-
-Author = James Ellis
-Version = 1.0
-Change Log:-
-
-***************************************/
-
+/**
+* @author James Ellis, Forcemobile
+* @date 2016
+*
+* @group 
+* @group-content 
+*
+* @description {{ api_name }} - Single custom trigger on {{ object_name }} to separate trigger and 
+* @description methods, simplify testing and control order of execution
+*
+*/
 trigger {{ api_name }} on {{ object_name }} (
   before insert, 
 	before update, 
@@ -24,21 +23,20 @@ trigger {{ api_name }} on {{ object_name }} (
 
           if (Trigger.isInsert) 
           {
-          // {{ api_name }}_Helper a = 
-          //new {{ api_name }}_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ api_name }}_Handler a = 
+          //new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
           //a.
           } 
           if (Trigger.isUpdate) 
           {
-          //{{ api_name }}_Helper b = 
-          //  new {{ api_name }}_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          //{{ api_name }}_Handler b = 
+          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
           //b.
           }
           if (Trigger.isDelete) 
           {
-          // Call class logic here!
-          // {{ api_name }}_Helper c = 
-          //  new {{ api_name }}_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ api_name }}_Handler c = 
+          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
           //c.
           }
       }
@@ -46,20 +44,20 @@ trigger {{ api_name }} on {{ object_name }} (
       {
           if (Trigger.isInsert) 
           {
-          // {{ api_name }}_Helper d = 
-          //   new {{ api_name }}_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ api_name }}_Handler d = 
+          //   new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
           //d.  
           } 
           if (Trigger.isUpdate) 
           {
-          // {{ api_name }}_Helper e = 
-          //  new {{ api_name }}_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ api_name }}_Handler e = 
+          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
           //e.
           }
           if (Trigger.isDelete) 
           {
-          // {{ api_name }}_Helper f = 
-          //  new {{ api_name }}_Helper(Trigger.oldMap, Trigger.newMap, trigger.new);
+          // {{ api_name }}_Handler f = 
+          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
           //f.
           }
       }
