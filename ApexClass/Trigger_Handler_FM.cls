@@ -10,29 +10,28 @@
 */
 
 
-public class {{ api_name }} {
+public class {{ api_name }} 
+{
+	//these variables store trigger.oldmap and trigger.newmap and trigger.new (list)
+	Map<Id, {{ object_name }}> old{{ object_variable_name}};
+	Map<Id, {{ object_name }}> new{{ object_variable_name}};
+	List<{{ object_name }}> {{ object_variable_name}}List;
 
-//these variables store trigger.oldmap and trigger.newmap and trigger.new (list)
-Map<Id, {{ object_name }}> old{{ object_variable_name}};
-Map<Id, {{ object_name }}> new{{ object_variable_name}};
-List<{{ object_name }}> {{ object_variable_name}}List;
+	public {{ api_name }}
+	(
+		Map<Id, {{ object_name }}> oldTrigger{{ object_variable_name}},
+		Map<Id, {{ object_name }}> newTrigger{{ object_variable_name}},
+		List<{{ object_name }}> tNewList
+	)
+	{
 
-//this is the constructor
-//a map of the old and new records is expected as inputs
-public {{ api_name }}(
+		old{{ object_variable_name}} = oldTrigger{{ object_variable_name}};
+		new{{ object_variable_name}} = newTrigger{{ object_variable_name}};
+		{{ object_variable_name}}List = tNewList;
 
+	}
 
-Map<Id, {{ object_name }}> oldTrigger{{ object_variable_name}},
-Map<Id, {{ object_name }}> newTrigger{{ object_variable_name}},
-List<{{ object_name }}> tNewList){
-
-	old{{ object_variable_name}} = oldTrigger{{ object_variable_name}};
-	new{{ object_variable_name}} = newTrigger{{ object_variable_name}};
-	{{ object_variable_name}}List = tNewList;
-
-}//end of constructor
-
-//insert methods here
+//insert trigger methods here....
 
 	public void SetFieldDefaults()
 	{
@@ -41,10 +40,6 @@ List<{{ object_name }}> tNewList){
 			if(Trigger.isInsert)
 			{
 
-			}
-			if(Trigger.isUpdate)
-			{
-				
 			}
 		}
 
