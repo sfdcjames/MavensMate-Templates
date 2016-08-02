@@ -14,7 +14,7 @@ private class {{ api_name }} {
 	static testMethod void TestThis() 
 	{
 		//create test data
-		List<Contact> contacts = TestDataFactory.
+		//List<Contact> contacts = TestDataFactory.createAccountsAndContacts(1,1); //one acc with Test in name with one contact
 
 		Test.startTest();
 

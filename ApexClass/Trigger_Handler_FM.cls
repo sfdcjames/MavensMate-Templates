@@ -5,7 +5,7 @@
 * @group 
 * @group-content 
 *
-* @description {{ api_name }} - 
+* @description {{ api_name }} - This class holds methods for use with {{ object_name }}Trigger
 *
 */
 
