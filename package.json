@@ -36,6 +36,19 @@
                 }
             ]
         },
+          {  
+            "name":"TestDataFactory",
+            "file_name":"TestDataFactory.cls",
+            "description":"Template for a test data factory class",
+            "author":"James Ellis",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"the file name, should be TestDataFactory",
+                    "default":"the file name, should be TestDataFactory"
+                }
+            ]
+        },
         {  
             "name":"ApexInterface",
             "file_name":"ApexInterface.cls",
