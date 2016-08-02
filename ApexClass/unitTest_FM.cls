@@ -20,8 +20,8 @@ private class {{ api_name }} {
 
 		Test.stopTest();
 
-		System.assert('myExpression', 'fail message');//+ve assertion
-		System.assert('myExpression', 'fail message');//-ve assertion
+		//System.assert(myExpression, 'fail message');//+ve assertion
+		//System.assert(myExpression, 'fail message');//-ve assertion
 
 	}
 }
