@@ -24,7 +24,7 @@ trigger {{ api_name }} on {{ object_name }} (
           if (Trigger.isInsert) 
           {
           // {{ api_name }}_Handler a = 
-          //new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
+          //new {{ api_name }}_Handler(null, null, trigger.new);
           //a.
           } 
           if (Trigger.isUpdate) 
@@ -36,7 +36,7 @@ trigger {{ api_name }} on {{ object_name }} (
           if (Trigger.isDelete) 
           {
           // {{ api_name }}_Handler c = 
-          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
+          //  new {{ api_name }}_Handler(Trigger.oldMap,null, null);
           //c.
           }
       }
@@ -45,19 +45,19 @@ trigger {{ api_name }} on {{ object_name }} (
           if (Trigger.isInsert) 
           {
           // {{ api_name }}_Handler d = 
-          //   new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
+          //   new {{ api_name }}_Handler(null, Trigger.newMap, null);
           //d.  
           } 
           if (Trigger.isUpdate) 
           {
           // {{ api_name }}_Handler e = 
-          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
+          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, null);
           //e.
           }
           if (Trigger.isDelete) 
           {
           // {{ api_name }}_Handler f = 
-          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
+          //  new {{ api_name }}_Handler(Trigger.oldMap, null, null);
           //f.
           }
       }
