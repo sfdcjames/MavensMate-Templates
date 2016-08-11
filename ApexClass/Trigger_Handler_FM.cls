@@ -16,7 +16,7 @@ public class {{ api_name }}
 	Map<Id, {{ object_name }}> old{{ object_variable_name}};
 	Map<Id, {{ object_name }}> new{{ object_variable_name}};
 	List<{{ object_name }}> {{ object_variable_name}}List;
-	Map<String, Id> recTypes; //a map of recordtypeId's indexed by name for this object
+	Map<String, Id> recTypes = new Map<String, Id>() ; //a map of recordtypeId's indexed by name for this object
 
 	public {{ api_name }}
 	(
