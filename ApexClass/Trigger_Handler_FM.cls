@@ -29,8 +29,10 @@ public class {{ api_name }}
 		old{{ object_variable_name}} = oldTrigger{{ object_variable_name}};
 		new{{ object_variable_name}} = newTrigger{{ object_variable_name}};
 		{{ object_variable_name}}List = tNewList;
+	}
 
-		//set map of record type Ids
+	private Map<String, Id> getObjectRecordTypeIds()
+	{
 		for(RecordType rt: [SELECT Id, Name 
 			FROM RecordType 
 			WHERE SObjectType = '{{ object_name }}' 
@@ -38,8 +40,9 @@ public class {{ api_name }}
 		{
 			recTypes.put(rt.Name, rt.Id); //populate the map with name as key and id as value.
 		}
-
 	}
+
+	
 
 //insert trigger methods here....
 
