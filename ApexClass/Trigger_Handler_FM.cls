@@ -40,6 +40,7 @@ public class {{ api_name }}
 		{
 			recTypes.put(rt.Name, rt.Id); //populate the map with name as key and id as value.
 		}
+		return recTypes;
 	}
 
 	
