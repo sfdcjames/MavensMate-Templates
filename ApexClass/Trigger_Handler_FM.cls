@@ -48,9 +48,9 @@ public class {{ api_name }}
 
 	public void SetFieldDefaults()
 	{
-		for({{ object_name }} {{ object_variable_name}}:{{ object_variable_name}}List)
+		if(Trigger.isInsert)
 		{
-			if(Trigger.isInsert)
+			for({{ object_name }} {{ object_variable_name}}:{{ object_variable_name}}List)
 			{
 
 			}
