@@ -23,42 +23,54 @@ trigger {{ api_name }} on {{ object_name }} (
 
           if (Trigger.isInsert) 
           {
-          // {{ api_name }}_Handler a = 
-          //new {{ api_name }}_Handler(null, null, trigger.new);
-          //a.
+              /*
+              {{ api_name }}_Handler a = 
+              {{ api_name }}_Handler(null, null, trigger.new);
+              a.
+              */
           } 
           if (Trigger.isUpdate) 
           {
-          //{{ api_name }}_Handler b = 
-          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
-          //b.
+              /*
+              {{ api_name }}_Handler b = 
+              new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, trigger.new);
+              b.
+              */
           }
           if (Trigger.isDelete) 
           {
-          // {{ api_name }}_Handler c = 
-          //  new {{ api_name }}_Handler(Trigger.oldMap,null, null);
-          //c.
+              /*
+              {{ api_name }}_Handler c = 
+              new {{ api_name }}_Handler(Trigger.oldMap,null, null);
+              c.
+              */
           }
       }
       if (Trigger.IsAfter) 
       {
           if (Trigger.isInsert) 
           {
-          // {{ api_name }}_Handler d = 
-          //   new {{ api_name }}_Handler(null, Trigger.newMap, null);
-          //d.  
+              /*
+              {{ api_name }}_Handler d = 
+              new {{ api_name }}_Handler(null, Trigger.newMap, null);
+              d.  
+              */
           } 
           if (Trigger.isUpdate) 
           {
-          // {{ api_name }}_Handler e = 
-          //  new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, null);
-          //e.
+              /*
+              {{ api_name }}_Handler e = 
+              new {{ api_name }}_Handler(Trigger.oldMap, Trigger.newMap, null);
+              e.
+              */
           }
           if (Trigger.isDelete) 
           {
-          // {{ api_name }}_Handler f = 
-          //  new {{ api_name }}_Handler(Trigger.oldMap, null, null);
-          //f.
+              /*
+              {{ api_name }}_Handler f = 
+              new {{ api_name }}_Handler(Trigger.oldMap, null, null);
+              f.
+              */
           }
       }
 }
