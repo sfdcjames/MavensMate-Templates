@@ -1,13 +1,13 @@
-<!--
-/****************************************************************************************
-{{ api_name }}
-Purpose - 
-Author - James Ellis
-Version - 1.0
-ChangeLog - 
-
-*****************************************************************************************/
--->
+<!--/**
+* @author James Ellis, Forcemobile Ltd
+* @date 2016
+*
+* @group 
+* @group-content 
+*
+* @description {{ api_name }} -
+*
+*/-->
 <apex:page showHeader="true" sidebar="true">
 	<apex:sectionHeader title="MyHeaderTitle" subtitle="MyHeaderSubTitle" />
 	<apex:pageBlock title="MyPageBlockTitle">
