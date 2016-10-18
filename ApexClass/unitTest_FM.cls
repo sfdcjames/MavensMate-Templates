@@ -11,11 +11,40 @@
 @isTest
 private class {{ api_name }} {
 	
-	static testMethod void TestThis() 
+		@testSetup static void createTestData() 
 	{
 		//create test data
 		//List<Contact> contacts = TestDataFactory.createAccountsAndContacts(1,1); //one acc with Test in name with one contact
+	}
+	
+	static testMethod void testInsert() 
+	{
+		
 
+		Test.startTest();
+
+		Test.stopTest();
+
+		//System.assert(myExpression, 'fail message');//+ve assertion
+		//System.assert(myExpression, 'fail message');//-ve assertion
+
+	}
+
+	static testMethod void testUpdate() 
+	{
+	
+		Test.startTest();
+
+		Test.stopTest();
+
+		//System.assert(myExpression, 'fail message');//+ve assertion
+		//System.assert(myExpression, 'fail message');//-ve assertion
+
+	}
+
+	static testMethod void testDelete() 
+	{
+	
 		Test.startTest();
 
 		Test.stopTest();
