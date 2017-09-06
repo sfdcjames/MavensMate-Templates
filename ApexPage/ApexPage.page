@@ -1,6 +1,6 @@
 <!--/**
 * @author James Ellis, Forcemobile Ltd
-* @date 2016
+* @date 2017
 *
 * @group 
 * @group-content 
@@ -8,6 +8,6 @@
 * @description {{ api_name }} -
 *
 */-->
-<apex:page showHeader="true" sidebar="true">
+<apex:page showHeader="true" sidebar="true" showchat="false">
 	
 </apex:page>

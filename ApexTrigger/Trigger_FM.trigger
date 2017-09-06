@@ -1,6 +1,6 @@
 /**
 * @author James Ellis, Forcemobile
-* @date 2016
+* @date 2017
 *
 * @group 
 * @group-content 
@@ -25,7 +25,7 @@ trigger {{ api_name }} on {{ object_name }} (
           {
               /*
               {{ api_name }}_Handler a = 
-              {{ api_name }}_Handler(null, null, trigger.new);
+              new {{ api_name }}_Handler(null, null, trigger.new);
               a.
               */
           } 

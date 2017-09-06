@@ -32,19 +32,19 @@ public class {{ api_name }}
 	}
 	
 
-//insert trigger methods here....
+//insert trigger methods below...
 
-	public void SetFieldDefaults()
+	public void SomeMethodName()
 	{
 		if(Trigger.isInsert)
 		{
 			for({{ object_name }} {{ object_variable_name}}:{{ object_variable_name}}List)
 			{
-
+				//do something remarkable
 			}
 		}
 
 	}
 
 
-}//end of class
+}
